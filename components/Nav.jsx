@@ -34,11 +34,6 @@ export default function Nav() {
 
       <NavbarContent className="sm:hidden pr-3" justify="start">
         <NavbarBrand>
-          {/* <Image
-            width={300}
-            alt="BGCC Logo Image"
-            src="https://i.imgur.com/I4dsioZ.png"
-          /> */}
           <Image
             width={200}
             alt="BGCC Logo Image"
@@ -80,7 +75,7 @@ export default function Nav() {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className="text-white mx-3 hidden lg:flex" href="#">
+          <Link className="text-white mx-3 hidden lg:flex" href="/services">
             Services
           </Link>
         </NavbarItem>

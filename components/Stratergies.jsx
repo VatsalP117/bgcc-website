@@ -25,7 +25,7 @@ export default function Stratergies() {
     <StratCard no={ele.no} title={ele.title} description={ele.description} />
   ));
   return (
-    <div className="flex flex-col lg:flex-row gap-2 md:gap-12 overflow-hidden">
+    <div className="flex flex-col lg:flex-row gap-8  overflow-hidden">
       {cardElements}
     </div>
   );

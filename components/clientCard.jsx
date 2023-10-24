@@ -1,7 +1,7 @@
 import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
 export default function ClientCard() {
   return (
-    <Card className="py-4 bg-[#343434] max-w-[325px] ">
+    <Card className="py-4 bg-[#343434] bg-opacity-[50%] max-w-[325px] ">
       <CardBody className="overflow-visible py-2">
         <Image
           alt="Card background"

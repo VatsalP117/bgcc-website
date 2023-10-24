@@ -4,10 +4,10 @@ export default function ClientsPage() {
   return (
     <div className="flex flex-col gap-12 h-full">
       <div className="flex flex-col h-screen bg-clients-image bg-cover bg-no-repeat items-center justify-center">
-        <h1 className="font-bold text-4xl md:text-7xl tracking-wider mb-2">
+        <h1 className="font-bold text-5xl md:text-7xl tracking-wider mb-2">
           Our Clients
         </h1>
-        <h2 className="font-poppins text-2xl md:text-3xl text-color-bgcc-yellow tracking-widest">
+        <h2 className="font-poppins text-3xl md:text-3xl text-color-bgcc-yellow tracking-widest">
           Partners in Success
         </h2>
       </div>
