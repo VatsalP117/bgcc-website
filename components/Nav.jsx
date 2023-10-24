@@ -27,7 +27,7 @@ export default function Nav() {
   ];
 
   return (
-    <Navbar disableAnimation isBordered className=" bg-[#1C1C1C] text-white">
+    <Navbar isBordered className=" bg-[#1C1C1C] text-white">
       <NavbarContent className="sm:hidden" justify="start">
         <NavbarMenuToggle />
       </NavbarContent>
