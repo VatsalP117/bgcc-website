@@ -55,31 +55,39 @@ export default function Nav() {
             src="https://i.imgur.com/I4dsioZ.png"
           />
         </NavbarBrand>
-        {/* <NavbarItem>
-          <Link color="white" href="#">
-            Features
-          </Link>
-        </NavbarItem>
-        <NavbarItem isActive>
-          <Link href="#" aria-current="page">
-            Customers
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            Integrations
-          </Link>
-        </NavbarItem> */}
       </NavbarContent>
 
-      <NavbarContent justify="end">
+      <NavbarContent className="flex flex-row  mr-0" justify="end">
         <NavbarItem className="hidden lg:flex">
-          <Link href="#">Login</Link>
+          <Button className="color-bgcc-yellow text-black">
+            Partner with Us
+          </Button>
+        </NavbarItem>
+
+        <NavbarItem>
+          <Link className="text-white mx-3 hidden lg:flex" href="#">
+            Home
+          </Link>
         </NavbarItem>
         <NavbarItem>
-          <Button as={Link} color="warning" href="#" variant="flat">
-            Sign Up
-          </Button>
+          <Link className="text-white mx-3 hidden lg:flex" href="#">
+            Testimonials
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link className="text-white mx-3 hidden lg:flex" href="#">
+            Events
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link className="text-white mx-3 hidden lg:flex" href="#">
+            Services
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link className="text-white mx-3 hidden lg:flex" href="/clients">
+            Clients
+          </Link>
         </NavbarItem>
       </NavbarContent>
 

@@ -12,6 +12,8 @@ const config: Config = {
       backgroundImage: {
         "landing-image": "url('https://i.imgur.com/BYu3zAD.png')",
         hero: "url('https://i.imgur.com/BYu3zAD.png')",
+        "clients-image": "url('https://i.imgur.com/7X8FYwi.png')",
+        "client-01": "url('https://imgur.com/rRFilsZ')",
         "bgcc-logo": "url('https://i.imgur.com/I4dsioZ.png')",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

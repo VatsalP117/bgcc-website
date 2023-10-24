@@ -2,7 +2,7 @@ export default function Services() {
   return (
     <div className="flex flex-col items-center p-6 md:p-12 lg:p-16 xl:p-20 gap-8 md:gap-16 lg:gap-20">
       {/* Section 1 */}
-      <div className="flex flex-col md:flex-row md:justify-between mb-8 md:mb-12 lg:mb-16 xl:mb-20">
+      <div className="flex flex-col-reverse md:flex-row md:justify-between mb-8 md:mb-12 lg:mb-16 xl:mb-20">
         <div className="md:w-1/2 mr-3">
           <div className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-white font-bold mb-4">
             Unleashing{" "}
@@ -14,7 +14,7 @@ export default function Services() {
             <span className="text-[#E5CF5F]">Visionary Thinking</span> to Propel
             Your Company to New Heights
           </div>
-          <div className="text-xl md:text-2xl lg:text-3xl  text-white w-4/5 md:w-6/7 tracking-wide font-semibold">
+          <div className=" md:text-xl lg:textxl  text-white w-4/5 md:w-6/7 tracking-wide ">
             We are a passionate group of 50+ like-minded students from BITS
             Pilani, Goa Campus. Our vision is to delve into the world of{" "}
             <span className="text-[#E5CF5F]">consulting</span>, working closely
@@ -22,7 +22,7 @@ export default function Services() {
           </div>
           {/* TODO: add the 3 boxes saying growth stories, alumns blah blah */}
         </div>
-        <div className="md:w-1/2 mt-7 md:mt-0">
+        <div className="flex flex-row items-center justify-center md:w-1/2 mt-7 md:mt-0">
           <img
             className="w-full md:w-2/3 m-auto"
             src="https://i.imgur.com/fWoybek.png"
@@ -31,7 +31,7 @@ export default function Services() {
         </div>
       </div>
       {/* Section 2 */}
-      <div className="flex flex-col md:flex-row-reverse md:justify-between mb-8 md:mb-12 lg:mb-16 xl:mb-20">
+      <div className="flex flex-col-reverse md:flex-row-reverse md:justify-between mb-8 md:mb-12 lg:mb-16 xl:mb-20">
         <div className="md:w-1/2 mr-3">
           <div className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-white font-bold mb-4">
             All Your Needs, Covered By{" "}
@@ -42,11 +42,7 @@ export default function Services() {
             <span className="text-[#E5CF5F]">Empower Your Business</span> Growth
             and Excellence
           </div>
-          <div className="text-xl md:text-2xl lg:text-3xl  text-white w-4/5 md:w-6/7 tracking-wide font-semibold">
-            {/* We are a passionate group of 50+ like-minded students from BITS
-            Pilani, Goa Campus. Our vision is to delve into the world of{" "}
-            <span className="text-[#E5CF5F]">consulting</span>, working closely
-            with clients and gaining hands-on experience in various industries. */}
+          <div className="md:text-xl lg:text-xl  text-white w-4/5 md:w-6/7 tracking-wide ">
             Whether you're a startup, established business, or somewhere in
             between, we have the{" "}
             <span className="text-[#E5CF5F]">consultancy solutions</span> to
@@ -55,7 +51,7 @@ export default function Services() {
             market research to operations and technology.
           </div>
         </div>
-        <div className="md:w-1/2 mt-7 md:mt-4">
+        <div className="flex flex-row items-center  md:w-1/2 mt-7 md:mt-4">
           <img
             className="w-full md:w-2/3"
             src="https://i.imgur.com/rj2ff6w.png"
