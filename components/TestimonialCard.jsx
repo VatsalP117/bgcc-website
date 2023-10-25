@@ -4,7 +4,7 @@ import testimonials from "@/utils/testimonials";
 
 const TestimonialCard = ({ ind }) => {
   //   console.log(testimonials);
-  //   const index = parseInt(ind);
+  const index = parseInt(ind);
   //   console.log(index);
   return (
     <div className="font-poppins bg-[#343434] bg-opacity-[50%] text-white p-4 rounded-lg shadow-lg max-w-md relative m-12">

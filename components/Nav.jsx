@@ -65,12 +65,12 @@ export default function Nav() {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className="text-white mx-3 hidden lg:flex" href="#">
+          <Link className="text-white mx-3 hidden lg:flex" href="/testimonials">
             Testimonials
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className="text-white mx-3 hidden lg:flex" href="#">
+          <Link className="text-white mx-3 hidden lg:flex" href="/events">
             Events
           </Link>
         </NavbarItem>

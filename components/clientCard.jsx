@@ -1,20 +1,22 @@
 import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
-export default function ClientCard() {
+import clients from "@/utils/clients";
+export default function ClientCard({ ind }) {
+  const index = parseInt(ind);
   return (
-    <Card className="py-4 bg-[#343434] bg-opacity-[50%] max-w-[325px] ">
-      <CardBody className="overflow-visible py-2">
+    <Card className="py-4 font-poppins max-w-[325px] ">
+      <CardBody className="overflow-visible py-2 flex flex-row justify-center">
         <Image
           alt="Card background"
           className="object-cover rounded-xl"
-          src="https://i.imgur.com/rRFilsZ.png"
-          width={270}
+          src={clients[index].imgUrl}
         />
       </CardBody>
       <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
+        <h2 className="font-bold text-2xl text-color-bgcc-yellow text-center w-full">
+          {clients[index].name}
+        </h2>
         <small className="text-default-500 text-center">
-          Rigi is a platform for creators, influencers and celebrities to grow,
-          manage and monetise their community. It is aimed at both established
-          and aspiring online creators who want to pursue their passion
+          {clients[index].description}
         </small>
       </CardHeader>
     </Card>
