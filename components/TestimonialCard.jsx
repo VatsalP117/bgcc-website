@@ -1,22 +1,28 @@
 // TestimonialCard.js
 import React from "react";
+import testimonials from "@/utils/testimonials";
 
-const TestimonialCard = ({ imageSrc, name, designation, content }) => {
+const TestimonialCard = ({ ind }) => {
+  //   console.log(testimonials);
+  //   const index = parseInt(ind);
+  //   console.log(index);
   return (
     <div className="font-poppins bg-[#343434] bg-opacity-[50%] text-white p-4 rounded-lg shadow-lg max-w-md relative m-12">
       <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 rounded-full overflow-hidden h-32 w-32">
         <img
-          src="https://i.imgur.com/fvLkE4Q.png"
-          alt={name}
+          src={testimonials[index].imgUrl}
+          alt={testimonials[index].name}
           className="w-full h-full object-cover"
         />
       </div>
       <div className="text-center mt-24">
         <h2 className="text-lg font-bold text-color-bgcc-yellow">
-          name jskfcjdsbfkjdsbfkjdbfkbdfj
+          {testimonials[index].name}
         </h2>
-        <p className="text-lg font-bold text-color-bgcc-yellow">designation</p>
-        <p className="text-white mt-2">content</p>
+        <p className="text-lg font-bold text-color-bgcc-yellow">
+          {testimonials[index].designation}
+        </p>
+        <p className="text-white mt-2">{testimonials[index].content}</p>
       </div>
     </div>
   );
