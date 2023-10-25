@@ -14,7 +14,7 @@ export default function Services() {
             <span className="text-[#E5CF5F]">Visionary Thinking</span> to Propel
             Your Company to New Heights
           </div>
-          <div className=" md:text-xl lg:textxl  text-white w-4/5 md:w-6/7 tracking-wide ">
+          <div className=" md:text-xl   text-white w-4/5 md:w-6/7 tracking-wide ">
             We are a passionate group of 50+ like-minded students from BITS
             Pilani, Goa Campus. Our vision is to delve into the world of{" "}
             <span className="text-[#E5CF5F]">consulting</span>, working closely

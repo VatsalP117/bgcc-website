@@ -4,7 +4,7 @@ import Newsletter from "@/components/Newsletter";
 export default function Testimonials() {
   return (
     <div className="flex flex-col gap-12 h-full">
-      <div className="flex flex-col h-screen bg-testimonials-image bg-blend-overlay bg-cover bg-no-repeat items-center justify-center">
+      <div className="flex flex-col h-screen bg-testimonials-image bg-auto bg-no-repeat items-center justify-center">
         <h1 className="font-bold text-5xl md:text-7xl tracking-wider mb-2 ">
           Testimonials
         </h1>

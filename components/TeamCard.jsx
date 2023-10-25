@@ -1,21 +1,22 @@
 import SeeAll from "@/components/SeeAll";
-import TeamCard from "@/components/TeamCard";
-export default function Team() {
+import team from "@/utils/team";
+export default function Team({ ind }) {
+  const index = parseInt(ind);
   return (
-    <div className="bg-[#343434] bg-opacity-[50%] rounded-md shadow-md flex flex-col gap-2 items-center py-6 px-8 lg:px-12">
+    <div className="bg-[#343434] mx-6 bg-opacity-[50%] rounded-md shadow-md flex flex-col gap-2 items-center py-6 px-8 lg:px-12">
       <div className="rounded-full overflow-hidden h-32 w-32 mr-4">
         <img
-          src="https://i.imgur.com/XdKBFbf.png"
+          src={team[index].imgUrl}
           alt="name"
           className="w-full h-full object-cover"
         />
       </div>
       <div className="flex flex-col items-center gap-1">
         <h2 className="text-2xl lg:text-3xl font-bold text-color-bgcc-yellow">
-          President
+          {team[index].designation}
         </h2>
         <p className="text-xl lg:text-2xl text-semibold text-white">
-          Rupesh Yarlagadda
+          {team[index].name}
         </p>
         <div className="mt-2 flex space-x-2">
           <a

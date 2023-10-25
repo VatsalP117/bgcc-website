@@ -20,23 +20,7 @@ export default function EventsPage() {
             <span className="text-color-bgcc-yellow">you want!</span>
           </h4>
         </div>
-        <div className="flex flex-col lg:flex-row flex-wrap gap-8 lg:gap-10 py-6">
-          <div className="flex flex-col lg:flex-row gap-8 lg:justify-around w-full">
-            <ClientCard />
-            <ClientCard />
-            <ClientCard />
-          </div>
-          <div className="flex flex-col lg:flex-row gap-8 justify-around w-full">
-            <ClientCard />
-            <ClientCard />
-            <ClientCard />
-          </div>
-          <div className="flex flex-col lg:flex-row gap-8 justify-around w-full">
-            <ClientCard />
-            <ClientCard />
-            <ClientCard />
-          </div>
-        </div>
+        <div className="flex flex-col lg:flex-row flex-wrap gap-8 lg:gap-10 py-6"></div>
         <Newsletter />
       </div>
     </div>

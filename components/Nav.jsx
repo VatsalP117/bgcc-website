@@ -27,7 +27,7 @@ export default function Nav() {
   ];
 
   return (
-    <Navbar isBordered className=" bg-[#1C1C1C] text-white">
+    <Navbar isBordered className=" bg-[#343434]  text-white">
       <NavbarContent className="sm:hidden" justify="start">
         <NavbarMenuToggle />
       </NavbarContent>
@@ -60,51 +60,78 @@ export default function Nav() {
         </NavbarItem>
 
         <NavbarItem>
-          <Link className="text-white mx-3 hidden lg:flex" href="#">
+          <Link className="text-white mx-2 hidden lg:flex" href="/">
             Home
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className="text-white mx-3 hidden lg:flex" href="/testimonials">
+          <Link className="text-white mx-2 hidden lg:flex" href="/testimonials">
             Testimonials
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className="text-white mx-3 hidden lg:flex" href="/events">
+          <Link className="text-white mx-2 hidden lg:flex" href="/events">
             Events
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className="text-white mx-3 hidden lg:flex" href="/services">
+          <Link className="text-white mx-2 hidden lg:flex" href="/services">
             Services
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className="text-white mx-3 hidden lg:flex" href="/clients">
+          <Link className="text-white mx-2 hidden lg:flex" href="/clients">
             Clients
           </Link>
         </NavbarItem>
       </NavbarContent>
 
-      <NavbarMenu>
-        {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
-            <Link
-              className="w-full"
-              color={
-                index === 2
-                  ? "warning"
-                  : index === menuItems.length - 1
-                  ? "danger"
-                  : "foreground"
-              }
-              href="#"
-              size="lg"
-            >
-              {item}
-            </Link>
-          </NavbarMenuItem>
-        ))}
+      <NavbarMenu className="bg-[#343434] bg-opacity-[50%] text-white flex flex-col gap-3">
+        {/* <NavbarMenuItem>
+          <Button className="color-bgcc-yellow text-black">
+            Partner with Us
+          </Button>
+        </NavbarMenuItem> */}
+        <NavbarMenuItem>
+          <Link
+            href="/"
+            className="text-white text-2xl font-semibold font-poppins"
+          >
+            Home
+          </Link>
+        </NavbarMenuItem>
+        <NavbarMenuItem>
+          <Link
+            className="text-white text-2xl font-semibold font-poppins"
+            href="/testimonials"
+          >
+            Testimonials
+          </Link>
+        </NavbarMenuItem>
+        <NavbarMenuItem>
+          <Link
+            className="text-white text-2xl font-semibold font-poppins"
+            href="/events"
+          >
+            Events
+          </Link>
+        </NavbarMenuItem>
+        <NavbarMenuItem>
+          <Link
+            className="text-white text-2xl font-semibold font-poppins"
+            href="/services"
+          >
+            Services
+          </Link>
+        </NavbarMenuItem>
+        <NavbarMenuItem>
+          <Link
+            className="text-white text-2xl font-semibold font-poppins"
+            href="/clients"
+          >
+            Clients
+          </Link>
+        </NavbarMenuItem>
       </NavbarMenu>
     </Navbar>
   );
