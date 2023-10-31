@@ -1,6 +1,10 @@
-export default function SeeAll() {
+import Link from "next/link";
+export default function SeeAll({ toPage }) {
   return (
-    <div className="flex flex-row gap-1 mb-4 text-xl text-color-bgcc-yellow mr-auto items-center">
+    <Link
+      className="flex flex-row gap-1 mb-4 text-xl text-color-bgcc-yellow mr-auto items-center"
+      href={toPage ? toPage : "/"}
+    >
       <h2 className="">See All</h2>
 
       <svg
@@ -17,6 +21,6 @@ export default function SeeAll() {
           clip-rule="evenodd"
         ></path>
       </svg>
-    </div>
+    </Link>
   );
 }

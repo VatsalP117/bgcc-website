@@ -4,7 +4,7 @@ export default function Clients() {
   return (
     <div className="flex flex-col gap-3 lg:gap-5">
       <div className="flex flex-col-reverse lg:flex-row p-6 md:p-12 lg:p-16 xl:p-20 gap-8 md:gap-16 lg:gap-20 text-center">
-        <div className="flex flex-col basis-1/2 gap-1 justify-center">
+        <div className="flex flex-col basis-1/2 gap-1 text-center lg:text-left">
           <h2 className="text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-bold">
             Partners In Success
           </h2>
@@ -15,7 +15,7 @@ export default function Clients() {
             Top <span className="text-color-bgcc-yellow">companies</span> we
             have worked with
           </h6>
-          <p className="md:text-xl mt-6 mx-auto">
+          <p className="md:text-xl mt-6 text-justify lg:text-left mx-auto lg:mx-0">
             We have a{" "}
             <span className="text-color-bgcc-yellow">
               stellar client roster
@@ -33,7 +33,7 @@ export default function Clients() {
         </div>
       </div>
       <div className="flex flex-col p-6 md:p-12 lg:p-16 xl:p-20 gap-8 md:gap-16 lg:gap-20">
-        <SeeAll />
+        <SeeAll toPage="/clients" />
       </div>
     </div>
   );

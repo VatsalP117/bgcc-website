@@ -1,4 +1,5 @@
 import React from "react";
+import imgLinks from "@/utils/images";
 import {
   Navbar,
   NavbarBrand,
@@ -34,11 +35,7 @@ export default function Nav() {
 
       <NavbarContent className="sm:hidden pr-3" justify="start">
         <NavbarBrand>
-          <Image
-            width={200}
-            alt="BGCC Logo Image"
-            src="https://i.imgur.com/I4dsioZ.png"
-          />
+          <Image width={200} alt="BGCC Logo Image" src={imgLinks.bgccLogo} />
         </NavbarBrand>
       </NavbarContent>
 
@@ -87,11 +84,6 @@ export default function Nav() {
       </NavbarContent>
 
       <NavbarMenu className="bg-[#343434] bg-opacity-[50%] text-white flex flex-col gap-3">
-        {/* <NavbarMenuItem>
-          <Button className="color-bgcc-yellow text-black">
-            Partner with Us
-          </Button>
-        </NavbarMenuItem> */}
         <NavbarMenuItem>
           <Link
             href="/"
