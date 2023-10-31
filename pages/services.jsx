@@ -37,7 +37,7 @@ export default function ServicesPage() {
   ));
   return (
     <div className="flex flex-col gap-12 h-full">
-      <div className="flex flex-col h-screen bg-services-image bg-cover bg-opacity-[10%] bg-no-repeat items-center justify-center">
+      <div className="flex flex-col h-screen bg-services-image bg-cover bg-opacity-[10%]  bg-no-repeat items-center justify-center">
         <h1 className="font-bold brightness-200 text-5xl md:text-7xl tracking-wider mb-2 ">
           Services
         </h1>
@@ -45,9 +45,11 @@ export default function ServicesPage() {
           Tailored Solutions
         </h2>
       </div>
-      <div className="flex flex-col p-6 md:p-12 lg:p-16 xl:p-20 gap-8 lg:gap-16">
+      <div className="flex flex-col p-4 md:p-12 lg:p-16 xl:p-20 gap-8 lg:gap-16 text-center">
         <div className="flex flex-col font-poppins gap-2">
-          <h2 className="text-5xl font-bold">Our Offerings</h2>
+          <h2 className="text-3xl md:text-4xl lg:text-4xl xl:text-6xl font-bold">
+            Our Offerings
+          </h2>
 
           <h4 className="text-md ">
             Supporting your{" "}

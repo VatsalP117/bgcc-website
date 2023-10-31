@@ -22,3 +22,6 @@ header {
 .text-color-bgcc-yellow {
   color: #e5cf5f;
 }
+.red-focus {
+  border: 2px solid red;
+}

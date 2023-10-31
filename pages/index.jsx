@@ -12,13 +12,13 @@ import SeeAll from "@/components/SeeAll";
 import { useState } from "react";
 export default function Home() {
   return (
-    <div className="flex flex-col h-full w-full  font-poppins">
-      <div className="flex flex-col h-screen bg-hero bg-cover bg-center bg-no-repeat overflow-y-auto">
+    <div className="flex flex-col   h-full w-full  font-poppins">
+      <div className="flex flex-col h-screen bg-hero bg-cover bg-center bg-no-repeat">
         <section className="landing-text h-full flex flex-col justify-center items-center gap-4 ">
-          <h1 className="text-6xl lg:text-7xl font-bold text-white text-center">
+          <h1 className="text-6xl lg:text-7xl font-bold text-white text-center md:mx-8">
             BITS Goa Consulting Club
           </h1>
-          <h2 className="text-2xl lg:text-4xl text-[#E5CF5F]">
+          <h2 className="text-2xl lg:text-4xl text-[#E5CF5F] md:mx-8">
             Insight. Impact. Excellence
           </h2>
         </section>

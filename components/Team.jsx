@@ -2,20 +2,22 @@ import SeeAll from "@/components/SeeAll";
 import TeamCard from "@/components/TeamCard";
 export default function Team() {
   return (
-    <div className="flex flex-col gap-3 lg:gap-5 font-poppins">
+    <div className="flex flex-col gap-3 lg:gap-5 font-poppins text-center">
       <div className="flex flex-col lg:flex-row p-6 md:p-12 lg:p-16 xl:p-20 gap-8 md:gap-16 lg:gap-20">
         <div className="flex flex-col basis-1/2 gap-1 justify-center">
-          <h2 className="text-4xl font-bold">Leading The Front</h2>
-          <h2 className="text-4xl font-bold text-color-bgcc-yellow">
+          <h2 className="text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-bold">
+            Leading The Front
+          </h2>
+          <h2 className="text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-bold text-color-bgcc-yellow">
             Our Team
           </h2>
-          <h6 className="text-md">
+          <h6 className="text-md mx-auto">
             The people working on the frontier &
             <span className="text-color-bgcc-yellow"> making it happen</span>
           </h6>
         </div>
         <div>
-          <div className="bg-[#343434] bg-opacity-[50%] rounded-md shadow-md flex items-center py-12 px-10 lg:px-16">
+          <div className="bg-[#343434] bg-opacity-[50%] rounded-md shadow-md flex  items-center py-12 px-10 lg:px-16">
             <div className="rounded-full overflow-hidden h-32 w-32 mr-4">
               <img
                 src="https://i.imgur.com/XdKBFbf.png"
@@ -30,7 +32,7 @@ export default function Team() {
               <p className="text-xl lg:text-2xl text-semibold text-white">
                 Rupesh Yarlagadda
               </p>
-              <div className="mt-2 flex space-x-2">
+              <div className="mt-2 flex space-x-2  justify-center">
                 <a
                   href="#"
                   target="_blank"
