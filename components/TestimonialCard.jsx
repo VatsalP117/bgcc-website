@@ -22,7 +22,9 @@ const TestimonialCard = ({ ind }) => {
         <p className="text-lg font-bold text-color-bgcc-yellow">
           {testimonials[index].designation}
         </p>
-        <p className="text-white mt-2">{testimonials[index].content}</p>
+        <p className="text-white mt-2 text-justify">
+          {testimonials[index].content}
+        </p>
       </div>
     </div>
   );

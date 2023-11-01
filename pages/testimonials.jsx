@@ -23,18 +23,18 @@ export default function Testimonials() {
             Success
           </h4>
         </div>
-        <div className="flex flex-col lg:flex-row flex-wrap gap-8 lg:gap-10 py-6">
-          <div className="flex flex-col lg:flex-row gap-8 lg:justify-around w-full">
+        <div className="flex flex-col items-center lg:flex-row flex-wrap gap-8 lg:gap-10 py-6">
+          <div className="flex flex-col lg:flex-row gap-8 lg:justify-around w-full items-center">
             <TestimonialCard ind="0" />
             <TestimonialCard ind="1" />
           </div>
-          <div className="flex flex-col lg:flex-row gap-8 justify-around w-full">
+          <div className="flex flex-col lg:flex-row gap-8 justify-around w-full items-center">
             <TestimonialCard ind="2" />
             <TestimonialCard ind="3" />
           </div>
         </div>
-        <Newsletter />
       </div>
+      <Newsletter />
     </div>
   );
 }

@@ -36,8 +36,8 @@ export default function ServicesPage() {
         <div className="flex flex-col  gap-8 lg:gap-10 py-6">
           {serviceElements}
         </div>
-        <Newsletter />
       </div>
+      <Newsletter />
     </div>
   );
 }

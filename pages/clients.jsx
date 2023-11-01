@@ -39,8 +39,8 @@ export default function ClientsPage() {
             <ClientCard ind="8" />
           </div>
         </div>
-        <Newsletter />
       </div>
+      <Newsletter />
     </div>
   );
 }

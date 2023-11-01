@@ -36,8 +36,8 @@ export default function EventsPage() {
         <div className="flex flex-col ">
           <PastEvents />
         </div>
-        <Newsletter />
       </div>
+      <Newsletter />
     </div>
   );
 }
