@@ -1,6 +1,7 @@
 import ClientCard from "@/components/clientCard";
 import Newsletter from "@/components/Newsletter";
-import UpcomingEvents from "@/components/upcomingEvents";
+import UpcomingEvents from "@/components/UpcomingEvents";
+import PastEvents from "@/components/PastEvents";
 export default function EventsPage() {
   return (
     <div className="flex flex-col gap-12 h-full">
@@ -21,8 +22,19 @@ export default function EventsPage() {
             <span className="text-color-bgcc-yellow">you want!</span>
           </h4>
         </div>
-        <div className="flex flex-col lg:flex-row  flex-wrap gap-8 lg:gap-10 py-6 ">
+        <div className="flex flex-col ">
           <UpcomingEvents />
+        </div>
+        <div className="flex flex-col font-poppins">
+          <h2 className="text-5xl font-bold mb-2">Past Events</h2>
+
+          <h4 className="text-md ">
+            Enter whatever{" "}
+            <span className="text-color-bgcc-yellow">you want!</span>
+          </h4>
+        </div>
+        <div className="flex flex-col ">
+          <PastEvents />
         </div>
         <Newsletter />
       </div>

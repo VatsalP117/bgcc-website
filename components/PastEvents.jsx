@@ -2,7 +2,7 @@ import NukaCarousel from "nuka-carousel";
 import EventCard from "@/components/EventCard";
 import upcomingEvents from "@/utils/upcomingEvents";
 
-export default function UpcomingEvents() {
+export default function PastEvents() {
   return (
     <NukaCarousel
       defaultControlsConfig={{
@@ -10,7 +10,7 @@ export default function UpcomingEvents() {
           fill: "white",
         },
       }}
-      cellAlign="center"
+      cellAlign="start"
       renderCenterLeftControls={() => null}
       renderCenterRightControls={() => null}
     >
