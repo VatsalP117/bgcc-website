@@ -36,7 +36,7 @@ export default function ClientsSlider({ windowWidth }) {
       renderCenterRightControls={() => null}
       cellSpacing={20}
       autoplay={true}
-      autoplayInterval={2500}
+      pauseOnHover={true}
       //   renderBottomCenterControls={() => null}
     >
       {clients.map((client) => (
