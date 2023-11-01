@@ -9,6 +9,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 header {
   max-width: 1600px !important;
 }
@@ -24,4 +25,12 @@ header {
 }
 .red-focus {
   border: 2px solid red;
+}
+/* carousel styles */
+
+.paging-item {
+  margin-right: 10px;
+}
+.paging-dot {
+  fill: white;
 }

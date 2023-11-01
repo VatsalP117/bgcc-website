@@ -7,11 +7,11 @@ export default function ServiceCard({ title, description, imgUrl }) {
         className="rounded-t-lg 
  md:w-1/3 md:rounded-l-lg md:rounded-t-none"
       />{" "}
-      <div className="p-6">
+      <div className="p-6 flex flex-col justify-center">
         <h2 className="font-bold text-xl md:text-3xl text-color-bgcc-yellow">
           {title}
         </h2>
-        <p className="text-white text-md md:text-lg mt-4 lg:mt-6">
+        <p className="text-white text-md md:text-lg mt-4 lg:mt-6 text-justify lg:text-left">
           {description}
         </p>
       </div>

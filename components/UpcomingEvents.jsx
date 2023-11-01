@@ -2,16 +2,20 @@ import NukaCarousel from "nuka-carousel";
 import EventCard from "@/components/EventCard";
 import upcomingEvents from "@/utils/upcomingEvents";
 
-export default function Test() {
+export default function UpcomingEvents() {
   return (
     <NukaCarousel
-      className="bg-white"
+      defaultControlsConfig={{
+        pagingDotsStyle: {
+          fill: "white",
+        },
+      }}
       cellAlign="center"
       renderCenterLeftControls={() => null}
       renderCenterRightControls={() => null}
     >
       {upcomingEvents.map((event) => (
-        <div className="flex flex-row justify-center w-full " key={event.id}>
+        <div className="flex flex-row  justify-center w-full" key={event.id}>
           <EventCard
             title={event.title}
             description={event.description}
