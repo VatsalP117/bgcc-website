@@ -1,6 +1,7 @@
+import ClientsSlider from "@/components/ClientsSlider";
 import SeeAll from "./SeeAll";
 
-export default function Clients() {
+export default function Clients({ windowWidth }) {
   return (
     <div className="flex flex-col gap-3 lg:gap-5">
       <div className="flex flex-col-reverse lg:flex-row p-6 md:p-12 lg:p-16 xl:p-20 gap-8 md:gap-16 lg:gap-20 text-center">
@@ -32,8 +33,11 @@ export default function Clients() {
           ></img>
         </div>
       </div>
-      <div className="flex flex-col p-6 md:p-12 lg:p-16 xl:p-20 gap-8 md:gap-16 lg:gap-20">
+      <div className="flex flex-col px-6 md:px-12 lg:px-16 xl:px-20">
         <SeeAll toPage="/clients" />
+      </div>
+      <div className="flex flex-col px-6 md:px-12 lg:px-16 xl:px-20 overflow-x-hidden">
+        <ClientsSlider windowWidth={windowWidth} />
       </div>
     </div>
   );

@@ -1,6 +1,10 @@
 import imgLinks from "@/utils/images";
 import React from "react";
-import { InstagramLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
+import {
+  InstagramLogoIcon,
+  LinkedInLogoIcon,
+  TwitterLogoIcon,
+} from "@radix-ui/react-icons";
 const Footer = () => {
   return (
     <footer className="bg-[#343434] bg-opacity-[50%] text-white py-8 font-poppins text-sm px-6 lg:px-16">
@@ -15,7 +19,7 @@ const Footer = () => {
                 <InstagramLogoIcon />
               </a>
               <a href="#" className="mr-4">
-                <InstagramLogoIcon />
+                <TwitterLogoIcon />
               </a>
               <a href="#" className="mr-4">
                 <LinkedInLogoIcon />

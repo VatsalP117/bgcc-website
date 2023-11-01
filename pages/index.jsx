@@ -9,8 +9,25 @@ import Newsletter from "@/components/Newsletter";
 import Clients from "@/components/Clients";
 import Team from "@/components/Team";
 import SeeAll from "@/components/SeeAll";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+function useWindowWidth() {
+  const [windowWidth, setWindowWidth] = useState(
+    typeof window !== "undefined" ? window.innerWidth : 0
+  );
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const handleResize = () => setWindowWidth(window.innerWidth);
+      window.addEventListener("resize", handleResize);
+      return () => window.removeEventListener("resize", handleResize);
+    }
+  }, []);
+
+  return windowWidth;
+}
 export default function Home() {
+  const windowWidth = useWindowWidth();
+  console.log(windowWidth);
   return (
     <div className="flex flex-col   h-full w-full  font-poppins">
       <div className="flex flex-col h-screen bg-hero bg-cover bg-center bg-no-repeat">
@@ -28,7 +45,7 @@ export default function Home() {
         <SeeAll toPage="/services" />
         <Stratergies />
       </div>
-      <Clients />
+      <Clients windowWidth={windowWidth} />
       <Team />
       <Newsletter />
     </div>

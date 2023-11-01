@@ -92,7 +92,7 @@ export default function Team() {
           <TeamCard ind="5" />
         </div>
       </div>
-      <div className="flex flex-col p-6 md:p-12 lg:p-16 xl:p-20 gap-8 md:gap-16 lg:gap-20">
+      <div className="flex flex-col px-6 md:px-12 lg:px-16 xl:px-20">
         <SeeAll />
       </div>
     </div>

@@ -4,21 +4,21 @@ import upcomingEvents from "@/utils/upcomingEvents";
 import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
 import clients from "@/utils/clients";
 import { useState, useEffect } from "react";
-function useWindowWidth() {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+// function useWindowWidth() {
+//   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-  useEffect(() => {
-    const handleResize = () => setWindowWidth(window.innerWidth);
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+//   useEffect(() => {
+//     const handleResize = () => setWindowWidth(window.innerWidth);
+//     window.addEventListener("resize", handleResize);
+//     return () => window.removeEventListener("resize", handleResize);
+//   }, []);
 
-  return windowWidth;
-}
-export default function ClientsSlider() {
-  const windowWidth = useWindowWidth();
+//   return windowWidth;
+// }
+export default function ClientsSlider({ windowWidth }) {
+  //   const windowWidth = useWindowWidth();
 
-  let slidesToShow;
+  let slidesToShow = 2;
   if (windowWidth <= 640) {
     slidesToShow = 1;
   } else if (windowWidth <= 768) {
@@ -34,10 +34,13 @@ export default function ClientsSlider() {
       slidesToShow={slidesToShow}
       renderCenterLeftControls={() => null}
       renderCenterRightControls={() => null}
-      renderBottomCenterControls={() => null}
+      cellSpacing={20}
+      autoplay={true}
+      autoplayInterval={2500}
+      //   renderBottomCenterControls={() => null}
     >
       {clients.map((client) => (
-        <Card className="py-4 font-poppins max-w-[325px] ">
+        <Card className="py-4 font-poppins max-w-[325px]  border-1 border-gray-400 mb-10 md:mb-14 mx-auto">
           <CardBody className="overflow-visible py-2 flex flex-row justify-center">
             <Image
               alt="Card background"
