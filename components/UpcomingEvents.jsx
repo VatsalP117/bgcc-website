@@ -15,11 +15,12 @@ export default function UpcomingEvents() {
       renderCenterRightControls={() => null}
     >
       {upcomingEvents.map((event) => (
-        <div className="flex flex-row w-full" key={event.id}>
+        <div className="flex flex-row w-full">
           <EventCard
             title={event.title}
             description={event.description}
             imgUrl={event.imgUrl}
+            buttonText="Register"
           />
         </div>
       ))}

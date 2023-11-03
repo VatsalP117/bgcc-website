@@ -22,7 +22,8 @@
     "**/*.ts",
     "**/*.tsx",
     "pages/index.jsx",
-    "pages/test.jsx"
+    "pages/test.jsx",
+    "components/component/past-event-card.jsx"
   ],
   "exclude": ["node_modules"]
 }

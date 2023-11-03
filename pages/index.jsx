@@ -10,6 +10,7 @@ import Clients from "@/components/Clients";
 import Team from "@/components/Team";
 import SeeAll from "@/components/SeeAll";
 import { useState, useEffect } from "react";
+
 function useWindowWidth() {
   const [windowWidth, setWindowWidth] = useState(
     typeof window !== "undefined" ? window.innerWidth : 0
@@ -27,7 +28,7 @@ function useWindowWidth() {
 }
 export default function Home() {
   const windowWidth = useWindowWidth();
-  console.log(windowWidth);
+  // console.log(windowWidth);
   return (
     <div className="flex flex-col   h-full w-full  font-poppins">
       <div className="flex flex-col h-screen bg-hero bg-cover bg-center bg-no-repeat">

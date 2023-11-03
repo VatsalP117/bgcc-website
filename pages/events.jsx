@@ -2,6 +2,8 @@ import ClientCard from "@/components/clientCard";
 import Newsletter from "@/components/Newsletter";
 import UpcomingEvents from "@/components/UpcomingEvents";
 import PastEvents from "@/components/PastEvents";
+import { useState, useEffect } from "react";
+
 export default function EventsPage() {
   return (
     <div className="flex flex-col gap-12 h-full">

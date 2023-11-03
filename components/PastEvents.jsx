@@ -1,6 +1,6 @@
 import NukaCarousel from "nuka-carousel";
 import EventCard from "@/components/EventCard";
-import upcomingEvents from "@/utils/upcomingEvents";
+import pastEvents from "@/utils/pastEvents";
 
 export default function PastEvents() {
   return (
@@ -10,16 +10,17 @@ export default function PastEvents() {
           fill: "white",
         },
       }}
-      cellAlign="start"
+      cellAlign="center"
       renderCenterLeftControls={() => null}
       renderCenterRightControls={() => null}
     >
-      {upcomingEvents.map((event) => (
-        <div className="flex flex-row w-full" key={event.id}>
+      {pastEvents.map((event) => (
+        <div className="flex flex-row w-full">
           <EventCard
             title={event.title}
             description={event.description}
             imgUrl={event.imgUrl}
+            buttonText="Learn More"
           />
         </div>
       ))}

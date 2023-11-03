@@ -1,5 +1,21 @@
 import { Input, Button, Image } from "@nextui-org/react";
+import { useState } from "react";
+
 export default function Newsletter() {
+  const [email, setEmail] = useState("");
+  const submitEmail = async () => {
+    const response = await fetch("/api/sendToSheet", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email }),
+    });
+
+    if (response.ok) {
+      alert("Email sent successfully");
+    } else {
+      alert("Failed to send email");
+    }
+  };
   return (
     <div className="flex flex-col font-poppins  gap-6 lg:gap-8 items-center p-6 md:p-12 lg:p-16 xl:p-20">
       {/* section-01 => title */}
@@ -16,8 +32,17 @@ export default function Newsletter() {
         </h6>
       </div>
       <div className="flex flex-row items-center w-full lg:max-w-[50%]">
-        <Input type="email" label="Email" placeholder="Enter your email" />
-        <Button className="color-bgcc-yellow text-black font-bold -ml-28">
+        <Input
+          type="email"
+          label="Email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          placeholder="Enter your email"
+        />
+        <Button
+          className="color-bgcc-yellow text-black font-bold -ml-28"
+          onClick={submitEmail}
+        >
           Subscribe
         </Button>
       </div>

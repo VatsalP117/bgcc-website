@@ -1,5 +1,5 @@
 import { Button } from "@nextui-org/react";
-export default function EventCard({ title, description, imgUrl }) {
+export default function EventCard({ title, description, imgUrl, buttonText }) {
   return (
     <div className="mx-6  max-w-[1200px] font-poppins  rounded-lg shadow-2xl md:flex md:flex-row-reverse">
       <img
@@ -16,7 +16,7 @@ export default function EventCard({ title, description, imgUrl }) {
           {description}
         </p>
         <button className="p-4 mb-4 font-semibold max-w-[144px] mt-2 rounded-xl color-bgcc-yellow text-black font-poppins">
-          Register Now
+          {buttonText}
         </button>
       </div>
     </div>

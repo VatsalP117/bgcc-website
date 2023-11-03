@@ -30,31 +30,33 @@ export default function ClientsSlider({ windowWidth }) {
   }
 
   return (
-    <NukaCarousel
-      slidesToShow={slidesToShow}
-      renderCenterLeftControls={() => null}
-      renderCenterRightControls={() => null}
-      cellSpacing={20}
-      autoplay={true}
-      pauseOnHover={true}
-      //   renderBottomCenterControls={() => null}
-    >
-      {clients.map((client) => (
-        <Card className="py-4 font-poppins max-w-[325px]  border-1 border-gray-400 mb-10 md:mb-14 mx-auto">
-          <CardBody className="overflow-visible py-2 flex flex-row justify-center">
-            <Image
-              alt="Card background"
-              className="object-cover rounded-xl"
-              src={client.imgUrl}
-            />
-          </CardBody>
-          <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
-            <h2 className="font-bold text-2xl text-color-bgcc-yellow text-center w-full">
-              {client.name}
-            </h2>
-          </CardHeader>
-        </Card>
-      ))}
-    </NukaCarousel>
+    <>
+      <NukaCarousel
+        slidesToShow={slidesToShow}
+        renderCenterLeftControls={() => null}
+        renderCenterRightControls={() => null}
+        cellSpacing={20}
+        autoplay={true}
+        pauseOnHover={true}
+        //   renderBottomCenterControls={() => null}
+      >
+        {clients.map((client) => (
+          <Card className="py-4 font-poppins max-w-[325px]  border-1 border-gray-400 mb-10 md:mb-14 mx-auto">
+            <CardBody className="overflow-visible py-2 flex flex-row justify-center">
+              <Image
+                alt="Card background"
+                className="object-cover rounded-xl"
+                src={client.imgUrl}
+              />
+            </CardBody>
+            <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
+              <h2 className="font-bold text-2xl text-color-bgcc-yellow text-center w-full">
+                {client.name}
+              </h2>
+            </CardHeader>
+          </Card>
+        ))}
+      </NukaCarousel>
+    </>
   );
 }

@@ -15,7 +15,7 @@ export default function ClientCard({ ind }) {
         <h2 className="font-bold text-2xl text-color-bgcc-yellow text-center w-full">
           {clients[index].name}
         </h2>
-        <small className="text-default-500 text-center">
+        <small className="text-default-500 text-justify">
           {clients[index].description}
         </small>
       </CardHeader>
