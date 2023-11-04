@@ -23,7 +23,8 @@
     "**/*.tsx",
     "pages/index.jsx",
     "pages/test.jsx",
-    "components/component/past-event-card.jsx"
+    "components/component/past-event-card.jsx",
+    "components/component/testimonial-section.jsx"
   ],
   "exclude": ["node_modules"]
 }

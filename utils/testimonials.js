@@ -25,5 +25,21 @@ const testimonials = [
   },
   // Add more testimonials as needed
 ];
+export const landingPageTestimonial = {
+  primary: {
+    name: "Aditya Ghosh",
+    title: "Lead at Navjyoti India Foundation",
+    content: `Team BGCC was involved in helping to improve our e-commerce platform, which was in dire need of updating and modernization. The students took on this challenge enthusiastically, and their work has significantly impacted our online sales and revenue.
+They also provided invaluable support for our video conferencing needs. The team helped us optimize our setup for better performance and ease of use`,
+    imgUrl: "https://imgur.com/3mrSIT7.png",
+  },
+  others: [
+    //only keep 4 images if possible
+    "https://imgur.com/3mrSIT7.png",
+    "https://imgur.com/3mrSIT7.png",
+    "https://imgur.com/3mrSIT7.png",
+    "https://imgur.com/3mrSIT7.png",
+  ],
+};
 
 export default testimonials;
