@@ -1,5 +1,12 @@
 import { Button } from "@nextui-org/react";
-export default function EventCard({ title, description, imgUrl, buttonText }) {
+export default function EventCard({
+  title,
+  description,
+  imgUrl,
+  buttonText,
+  otherDetails,
+  link,
+}) {
   return (
     <div className="mx-6  max-w-[1200px] font-poppins  rounded-lg shadow-2xl md:flex md:flex-row-reverse">
       <img
@@ -15,9 +22,18 @@ export default function EventCard({ title, description, imgUrl, buttonText }) {
         <p className="text-white text-md md:text-lg mt-4 lg:mt-6 text-justify lg:text-left">
           {description}
         </p>
-        <button className="p-4 mb-4 font-semibold max-w-[144px] mt-2 rounded-xl color-bgcc-yellow text-black font-poppins">
+        {otherDetails && (
+          <p className="text-white text-md md:text-lg mt-4 lg:mt-6 text-justify lg:text-left">
+            {otherDetails}
+          </p>
+        )}
+
+        <a
+          href={link}
+          className="p-4 mb-4 font-semibold max-w-[144px] mt-2 rounded-xl color-bgcc-yellow text-black font-poppins"
+        >
           {buttonText}
-        </button>
+        </a>
       </div>
     </div>
   );

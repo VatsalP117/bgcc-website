@@ -5,6 +5,10 @@ const upcomingEvents = [
 Guest - Prateek Monga, PM @ Google, Ex-Amazon`,
 
     imgUrl: "https://i.imgur.com/SJjuboE.png",
+    //free to add details like guest location etc here
+    otherDetails: "Guest: Vatsal Patel",
+    //link to register or anything relevant
+    link: "https://www.google.com",
   },
   {
     title: "Crafting Your Future: Building the Perfect Resume",
@@ -12,6 +16,8 @@ Guest - Prateek Monga, PM @ Google, Ex-Amazon`,
 \nGuest - Prateek Monga, PM @ Google, Ex-Amazon`,
 
     imgUrl: "https://i.imgur.com/SJjuboE.png",
+    otherDetails: "Guest: Vatsal Patel",
+    link: "https://www.google.com",
   },
 ];
 

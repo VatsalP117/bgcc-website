@@ -13,7 +13,7 @@ export default function TestimonialSection() {
       <div className="flex flex-col lg:flex-row p-6 md:p-12 lg:p-16 xl:p-20 gap-8 md:gap-16 lg:gap-20 text-center">
         <div className="flex flex-col basis-1/2 gap-1 text-center lg:text-left justify-center">
           <h2 className="text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-bold">
-            Track Record Our Success
+            Track Record Of Success
           </h2>
           <h2 className="text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-bold text-color-bgcc-yellow">
             By <span className="text-color-bgcc-yellow">Our Testimonials</span>

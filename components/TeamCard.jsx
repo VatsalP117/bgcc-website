@@ -18,7 +18,7 @@ export default function Team({ ind }) {
         <p className="text-xl lg:text-2xl text-semibold text-white">
           {team[index].name}
         </p>
-        <div className="mt-2 flex space-x-2">
+        <div className="mt-2 flex space-x-4">
           <a
             href={team[index].instaLink}
             target="_blank"

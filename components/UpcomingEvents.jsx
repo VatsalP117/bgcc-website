@@ -21,6 +21,8 @@ export default function UpcomingEvents() {
             description={event.description}
             imgUrl={event.imgUrl}
             buttonText="Register"
+            otherDetails={event.otherDetails}
+            link={event.link}
           />
         </div>
       ))}

@@ -33,7 +33,7 @@ export default function Team() {
               <p className="text-xl lg:text-2xl text-semibold text-white">
                 {team[0].name}
               </p>
-              <div className="mt-2 flex space-x-2  justify-center">
+              <div className="mt-2 flex space-x-4  justify-center">
                 <a
                   href={team[0].instaLink}
                   target="_blank"

@@ -21,6 +21,8 @@ export default function PastEvents() {
             description={event.description}
             imgUrl={event.imgUrl}
             buttonText="Learn More"
+            otherDetails={event.otherDetails}
+            link={event.link}
           />
         </div>
       ))}
