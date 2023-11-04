@@ -15,8 +15,8 @@ const config: Config = {
         "clients-image": "url('https://imgur.com/4wO9cQv.png')",
         "client-01": "url('https://imgur.com/rRFilsZ')",
         "bgcc-logo": "url('https://i.imgur.com/I4dsioZ.png')",
-        "services-image": "url('https://i.imgur.com/wnkLzdK.png')",
-        "testimonials-image": "url('https://i.imgur.com/nmlIPp1.png')",
+        "services-image": "url('https://imgur.com/PpWOGK4.png')",
+        "testimonials-image": "url('https://imgur.com/EhxwNPe.png')",
         "events-image": "url('https://imgur.com/G3kjEWa.png')",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

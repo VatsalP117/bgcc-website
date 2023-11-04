@@ -20,7 +20,7 @@ export default function Team({ ind }) {
         </p>
         <div className="mt-2 flex space-x-2">
           <a
-            href="#"
+            href={team[index].instaLink}
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-500 hover:text-blue-700"
@@ -41,7 +41,7 @@ export default function Team({ ind }) {
             </svg>
           </a>
           <a
-            href="#"
+            href={team[index].linkedinLink}
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-500 hover:text-blue-700"

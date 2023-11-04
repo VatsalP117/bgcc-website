@@ -54,9 +54,11 @@ export default function Nav() {
 
       <NavbarContent className="flex flex-row  mr-0" justify="end">
         <NavbarItem className="hidden lg:flex">
-          <Button className="color-bgcc-yellow text-black">
-            Partner with Us
-          </Button>
+          <a href="https://forms.gle/D4cGknrmr4ngsShm6">
+            <Button className="color-bgcc-yellow text-black">
+              Partner with Us
+            </Button>
+          </a>
         </NavbarItem>
 
         <NavbarItem>
@@ -87,6 +89,14 @@ export default function Nav() {
       </NavbarContent>
 
       <NavbarMenu className="bg-[#343434] bg-opacity-[50%] text-white flex flex-col gap-3">
+        <NavbarMenuItem>
+          <a
+            href="https://forms.gle/D4cGknrmr4ngsShm6"
+            className="text-white text-2xl font-semibold font-poppins"
+          >
+            Partner with Us
+          </a>
+        </NavbarMenuItem>
         <NavbarMenuItem>
           <Link
             href="/"

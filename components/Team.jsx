@@ -1,5 +1,6 @@
 import SeeAll from "@/components/SeeAll";
 import TeamCard from "@/components/TeamCard";
+import team from "@/utils/team";
 export default function Team() {
   return (
     <div className="flex flex-col gap-3 lg:gap-5 font-poppins text-center">
@@ -27,14 +28,14 @@ export default function Team() {
             </div>
             <div>
               <h2 className="text-2xl lg:text-3xl font-bold text-color-bgcc-yellow">
-                President
+                {team[0].designation}
               </h2>
               <p className="text-xl lg:text-2xl text-semibold text-white">
-                Rupesh Yarlagadda
+                {team[0].name}
               </p>
               <div className="mt-2 flex space-x-2  justify-center">
                 <a
-                  href="#"
+                  href={team[0].instaLink}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-500 hover:text-blue-700"
@@ -55,7 +56,7 @@ export default function Team() {
                   </svg>
                 </a>
                 <a
-                  href="#"
+                  href={team[0].linkedinLink}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-500 hover:text-blue-700"

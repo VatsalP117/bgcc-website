@@ -28,7 +28,7 @@ export default function Clients({ windowWidth }) {
         <div className="basis-1/2">
           <img
             className="w-full md:w-2/3 m-auto"
-            src="https://i.imgur.com/M3ZPp27.png"
+            src="https://imgur.com/8vtL2CK.png"
             alt="Image"
           ></img>
         </div>

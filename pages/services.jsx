@@ -13,8 +13,8 @@ export default function ServicesPage() {
   ));
   return (
     <div className="flex flex-col gap-12 h-full">
-      <div className="flex flex-col h-screen bg-services-image bg-cover bg-opacity-[10%]  bg-no-repeat items-center justify-center">
-        <h1 className="font-bold brightness-200 text-5xl md:text-7xl tracking-wider mb-2 ">
+      <div className="flex  flex-col h-screen bg-services-image bg-cover bg-opacity-[10%]  bg-no-repeat items-center justify-center">
+        <h1 className="font-bold lg:-mt-28 brightness-200 text-5xl md:text-7xl tracking-wider mb-2 ">
           Services
         </h1>
         <h2 className="font-poppins bg-[#343434] bg-opacity-[50%] brightness-200 text-3xl md:text-3xl text-color-bgcc-yellow tracking-widest ">

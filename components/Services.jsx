@@ -25,7 +25,7 @@ export default function Services() {
         <div className="flex flex-row items-center justify-center lg:w-1/2 mt-7 md:mt-0 mb-3">
           <img
             className="w-full md:w-2/3 m-auto"
-            src="https://i.imgur.com/fWoybek.png"
+            src="https://imgur.com/E7lmbNX.png"
             alt="Image"
           ></img>
         </div>
@@ -54,7 +54,7 @@ export default function Services() {
         <div className="flex flex-row items-center justify-center lg:w-1/2 mt-7 md:mt-4 mb-3">
           <img
             className="w-full md:w-2/3"
-            src="https://i.imgur.com/rj2ff6w.png"
+            src="https://imgur.com/y3VC445.png"
             alt="Image"
           ></img>
         </div>
