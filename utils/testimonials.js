@@ -1,27 +1,27 @@
 const testimonials = [
   {
-    name: "Saakshi Gupta",
-    designation: "PM, WhizRobo",
-    content: `BGCC's Go-To-Market strategy played a pivotal role in the successful launch of our new product. Their team worked closely with us to define our target audience, positioning, and marketing approach. Their meticulous planning and execution generated significant interest from customers. BGCC's hands-on involvement and dedication to our project were exemplary, and we are thrilled with the results they helped us achieve.`,
-    imgUrl: "https://i.imgur.com/fvLkE4Q.png",
+    name: "Shailendra Mruthyunjayappa",
+    designation: "Board Member, Criyagen",
+    content: `We wanted an independent analysis of our products, markets, and competitors, and recommendations to increase our market share. BGCC did an outstanding job for us, providing well structured analysis and invaluable insights in a professional manner. I would strongly recommend BGCC to other companies looking for cost-effective, outcome-driven consultation.`,
+    imgUrl: "https://imgur.com/TUcXMpG.png",
   },
   {
-    name: "Pratik Mehta",
-    designation: "CMO, Hoopr",
-    content: `BGCC's consulting services were instrumental in driving our organization's success. Their team's strategic insights and expertise helped us optimize our operations and streamline processes. With their guidance, we achieved significant cost savings and improved overall efficiency. BGCC's commitment to excellence and hands-on approach made a lasting impact on our organization, and we continue to see the positive results of their collaboration.`,
-    imgUrl: "https://i.imgur.com/67YgfGc.png",
+    name: "Swapnil Saurav",
+    designation: "Co-founder and CEO, Rigi",
+    content: `We had a wonderful experience collaborating with BGCC for conducting extensive product and market research related to our upcoming ed-tech influencer product at Rigi.The team displayed utmost professionalism throughout the process, diligently identifying gaps in the current market and product offerings. Their valuable insights and recommendations have provided Rigi with innovative strategies to enhance our product development and engage with creators effectively. Moreover, the project adhered to the agreed-upon timeline, further demonstrating the team's commitment and efficiency.`,
+    imgUrl: "https://imgur.com/fH5eGLg.png",
   },
   {
-    name: "Saakshi Gupta",
-    designation: "CMO, Hoopr",
-    content: `BGCC's consulting services were instrumental in driving our organization's success. Their team's strategic insights and expertise helped us optimize our operations and streamline processes. With their guidance, we achieved significant cost savings and improved overall efficiency. BGCC's commitment to excellence and hands-on approach made a lasting impact on our organization, and we continue to see the positive results of their collaboration.`,
-    imgUrl: "https://i.imgur.com/67YgfGc.png",
+    name: "Raj Kunkolienkar",
+    designation: "Co-founder, Stoa",
+    content: `We were highly impressed by the team's unwavering professionalism as they meticulously identified gaps in the current market and product landscape.`,
+    imgUrl: "https://imgur.com/sCReK7q.png",
   },
   {
-    name: "Saakshi Gupta",
-    designation: "CMO, Hoopr",
-    content: `BGCC's consulting services were instrumental in driving our organization's success. Their team's strategic insights and expertise helped us optimize our operations and streamline processes. With their guidance, we achieved significant cost savings and improved overall efficiency. BGCC's commitment to excellence and hands-on approach made a lasting impact on our organization, and we continue to see the positive results of their collaboration.`,
-    imgUrl: "https://i.imgur.com/67YgfGc.png",
+    name: "Vibhas",
+    designation: "Senior Product Marketing Manager, Hoopr",
+    content: ` We worked with the BITS team on finding solutionsto a key business problem. We are an early stage startup operating in the creator/music sectors and wanted some insights as well as a fresh perspective on a few things related to our target audience. We were pleased with not just the final output that was delivered a few weeks after the project started, but also with how well our feedback was incorporated and acted upon by the BITS Team. Furthermore, the team also brought a fresh perspective to things and were able to provide a lot of interesting ideas for us in terms of marketing strategy, growth, and overall user acquisition.`,
+    imgUrl: "https://imgur.com/EZQwadm.png",
   },
   // Add more testimonials as needed
 ];
@@ -35,10 +35,10 @@ They also provided invaluable support for our video conferencing needs. The team
   },
   others: [
     //only keep 4 images if possible
-    "https://imgur.com/3mrSIT7.png",
-    "https://imgur.com/3mrSIT7.png",
-    "https://imgur.com/3mrSIT7.png",
-    "https://imgur.com/3mrSIT7.png",
+    "https://imgur.com/TUcXMpG.png",
+    "https://imgur.com/fH5eGLg.png",
+    "https://imgur.com/sCReK7q.png",
+    "https://imgur.com/EZQwadm.png",
   ],
 };
 

@@ -47,6 +47,7 @@ export default function ClientsSlider({ windowWidth }) {
                 alt="Card background"
                 className="object-cover rounded-xl"
                 src={client.imgUrl}
+                style={{ height: "200px" }}
               />
             </CardBody>
             <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
