@@ -34,7 +34,7 @@ export default function Home() {
     <div className="flex flex-col   h-full w-full  font-poppins">
       <div className="flex flex-col h-screen bg-hero bg-cover bg-center bg-no-repeat">
         <section className="landing-text h-full flex flex-col justify-center items-center gap-4 ">
-          <h1 className="text-6xl lg:-mt-28 lg:text-7xl font-bold font-inter text-white text-center md:mx-8">
+          <h1 className="text-6xl lg:-mt-28 lg:text-7xl font-bold font-poppins text-white text-center md:mx-8">
             BITS Goa Consulting Club
           </h1>
           <h2 className="text-2xl lg:text-4xl text-[#E5CF5F] md:mx-8">

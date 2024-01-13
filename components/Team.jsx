@@ -5,7 +5,7 @@ export default function Team() {
   return (
     <div className="flex flex-col gap-3 lg:gap-5 font-poppins text-center">
       <div className="flex flex-col lg:flex-row p-6 md:p-12 lg:p-16 xl:p-20 gap-8 md:gap-16 lg:gap-20">
-        <div className="flex flex-col basis-1/2 gap-1 justify-center">
+        <div className="flex flex-col basis-1/2 gap-1 justify-center mx-auto">
           <h2 className="text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-bold">
             Leading The Front
           </h2>
@@ -18,15 +18,15 @@ export default function Team() {
           </h6>
         </div>
         <div>
-          <div className="bg-[#343434] bg-opacity-[50%] rounded-md shadow-md flex  items-center py-12 px-10 lg:px-16">
-            <div className="rounded-full overflow-hidden h-32 w-32 mr-4">
+          {/* <div className="bg-[#343434] bg-opacity-[50%] rounded-md shadow-md flex  items-center py-12 px-10 lg:px-16"> */}
+          {/* <div className="rounded-full overflow-hidden h-32 w-32 mr-4">
               <img
                 src="https://i.imgur.com/XdKBFbf.png"
                 alt="name"
                 className="w-full h-full object-cover"
               />
-            </div>
-            <div>
+            </div> */}
+          {/* <div>
               <h2 className="text-2xl lg:text-3xl font-bold text-color-bgcc-yellow">
                 {team[0].designation}
               </h2>
@@ -77,18 +77,17 @@ export default function Team() {
                   </svg>
                 </a>
               </div>
-            </div>
-          </div>
+            </div> */}
+          {/* </div> */}
         </div>
       </div>
       <div className="flex flex-col lg:flex-row flex-wrap gap-8 lg:gap-10 py-6">
-        <div className="flex flex-col lg:flex-row gap-8 lg:justify-around w-full">
-          <TeamCard ind="0" />
+        <div className="flex flex-col lg:flex-row gap-8 lg:justify-center w-full">
           <TeamCard ind="1" />
           <TeamCard ind="2" />
-        </div>
-        <div className="flex flex-col lg:flex-row gap-8 justify-around w-full">
           <TeamCard ind="3" />
+        </div>
+        <div className="flex flex-col lg:flex-row gap-8 lg:justify-center w-full">
           <TeamCard ind="4" />
           <TeamCard ind="5" />
         </div>

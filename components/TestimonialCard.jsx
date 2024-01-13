@@ -12,7 +12,7 @@ const TestimonialCard = ({ ind }) => {
         <img
           src={testimonials[index].imgUrl}
           alt={testimonials[index].name}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-fill"
         />
       </div>
       <div className="text-center mt-24">
@@ -22,7 +22,7 @@ const TestimonialCard = ({ ind }) => {
         <p className="text-lg font-bold text-color-bgcc-yellow">
           {testimonials[index].designation}
         </p>
-        <p className="text-white mt-2 text-justify">
+        <p className="text-white mt-2 text-justify flex-grow">
           {testimonials[index].content}
         </p>
       </div>

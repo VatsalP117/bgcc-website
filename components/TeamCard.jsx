@@ -19,7 +19,7 @@ export default function Team({ ind }) {
           {team[index].name}
         </p>
         <div className="mt-2 flex space-x-4">
-          <a
+          {/* <a
             href={team[index].instaLink}
             target="_blank"
             rel="noopener noreferrer"
@@ -39,7 +39,7 @@ export default function Team({ ind }) {
                 fill="currentColor"
               ></path>
             </svg>
-          </a>
+          </a> */}
           <a
             href={team[index].linkedinLink}
             target="_blank"
