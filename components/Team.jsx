@@ -83,11 +83,12 @@ export default function Team() {
       </div>
       <div className="flex flex-col lg:flex-row flex-wrap gap-8 lg:gap-10 py-6">
         <div className="flex flex-col lg:flex-row gap-8 lg:justify-center w-full">
+          <TeamCard ind="0" />
           <TeamCard ind="1" />
           <TeamCard ind="2" />
-          <TeamCard ind="3" />
         </div>
         <div className="flex flex-col lg:flex-row gap-8 lg:justify-center w-full">
+          <TeamCard ind="3" />
           <TeamCard ind="4" />
           <TeamCard ind="5" />
         </div>
